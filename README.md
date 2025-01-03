@@ -23,7 +23,7 @@
 
 ### 3. 获取源码
 ```bash
-git clone https://github.com/yourusername/langchaintest.git
+git clone https://github.com/mcp2everything/langchaintest.git
 cd langchaintest
 ```
 
@@ -35,6 +35,9 @@ code .
 
 2. 创建并激活虚拟环境：
 ```bash
+# 安装uv
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+
 # 创建虚拟环境
 uv venv
 
@@ -60,7 +63,9 @@ uv add langchain_community
 uv add pyjwt
 uv sync
 ```
-
+##修改API 密钥
+将程序文件中的API密钥改为你自己的智谱AI 密钥
+ 
 ## 运行测试
 ```bash
 python ollamaStream.py
